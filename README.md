@@ -1,0 +1,1 @@
+Just a build of https://hub.docker.com/_/httpd/ with the openidc module installed https://github.com/zmartzone/mod_auth_openidc
