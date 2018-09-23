@@ -15,3 +15,5 @@ RUN apt-get update && apt-get install -y \
     apt-get purge -y curl jq && \
     rm -rf /var/lib/apt/lists/*
     
+EXPOSE 443
+CMD ["set -e && rm -f /usr/local/apache2/logs/httpd.pid && exec httpd -DFOREGROUND"]
